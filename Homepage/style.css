@@ -1,0 +1,78 @@
+* {
+    font-family: Cambria, Cochin, Georgia;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://live.staticflickr.com/65535/53713811686_e3b2f7f927.jpg');
+    background-repeat: no-repeat;
+    background-position: center 22rem;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 2.8rem;
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.sessao-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+}
+
+.texto-principal {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.descricao {
+    font-size: 17px;
+}
+
+.comecar-button {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    padding: 8px 17px;
+}
+
+.comecar-button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 900;
+}
+
+.comecar-button a:hover {
+    animation: infinite;
+}
+
+
+
+
+
+
