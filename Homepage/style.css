@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-item {
-    margin-left: 2.8rem;
+    margin-left: 3rem;
     list-style: none;
 }
 
@@ -32,6 +32,10 @@ nav {
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+.nav-item:hover {
+    background-color: rgb(43, 43, 43);
 }
 
 .sessao-final {
@@ -67,12 +71,35 @@ nav {
     font-weight: 900;
 }
 
-.comecar-button a:hover {
-    animation: infinite;
+.comecar-button a:active {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
+@media (max-width:570px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.8rem 1rem;
+        
+    }
 
+    .logo {
+        display: block;
+    }
 
+    .nav-item {
+        margin: 0.5rem 2.5rem;
+    }
 
+    .texto-principal {
+        font-size: 13px;
+        margin-bottom: 4px;
+    } 
 
-
+    .descricao {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
