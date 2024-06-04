@@ -38,6 +38,22 @@
  .nav-item:hover {
      background-color: rgb(43, 43, 43);
  }
+
+ .half-screen {
+    display: flex;
+}
+
+.box-esquerda, .box-direita {
+    flex: 1;
+    padding: 100px;
+    margin: 45px 70px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    box-shadow: 10px 15px 30px rgba(255, 0, 0, 0.5);;
+    background-color: rgba(68, 68, 68, 0.10);
+    text-align: center;
+}
+
  
 
 
