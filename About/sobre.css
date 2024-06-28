@@ -57,13 +57,12 @@
      
 }
  
- @media (max-width:570px) {
+ @media (max-width:760px) {
      nav {
          display: flex;
          flex-direction: column;
          align-items: center;
-         padding: 0.8rem 1rem;
-         
+         padding: 0.8rem 1rem;  
      }
  
      .logo {

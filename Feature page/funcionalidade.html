@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Argolock</title>
-     <link rel="stylesheet" href="feature.css">
-</head>
-<body>
-     <header>
-          <nav>
-              <div class="logo">
-                  <img src="https://live.staticflickr.com/65535/53713599846_bf87180be0.jpg" class="logo-img" width="240" height="100" alt="logo argolock">
-              </div>
-              <div class="nav-list">
-                  <ul>
-                      <li class="nav-item"><a href="/Homepage/index.html">Início</a></li>
-                      <li class="nav-item"><a href="/About/sobre.html">Sobre</a></li>
-                  </ul>
-              </div>
-          </nav>
-      </header>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argolock</title>
+    <link rel="stylesheet" href="feature.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://live.staticflickr.com/65535/53713599846_bf87180be0.jpg"
+            class="logo-img"
+            width="240"
+            height="100"
+            alt="logo argolock"
+          />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="/Homepage/index.html">Início</a></li>
+            <li class="nav-item"><a href="/About/sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="half-screen">
-        <div class="box-esquerda">
-            <h1>UPLOAD IMAGE</h1>
-            <input type="file" accept="image/jpeg, image/png">
-            <button type="submit" class="funcao">PROCESSAR</button>
-        </div>
-        <div class="box-direita">
-            <h1>DOWNLOAD IMAGE</h1>
-        </div>
+      <div class="box-esquerda">
+        <h1>UPLOAD IMAGE</h1>
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/jpeg, image/png"
+          class="input"
+        />
+        <button onclick="processImage()" class="funcao">PROCESSAR</button>
+        <canvas id="canvas" width="10" height="10"></canvas>
+      </div>
+      <div class="box-direita">
+        <h1>DOWNLOAD IMAGE</h1>
+        <a
+          id="downloadLink"
+          download="imagem_processada.png"
+          class="download-link"
+          >Baixar Imagem Processada</a
+        >
+      </div>
     </div>
-</body>
+    <script src="spark-md5.min.js"></script>
+    <script src="exif.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

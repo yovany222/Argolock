@@ -1,77 +1,122 @@
 * {
-     font-family: Cambria, Cochin, Georgia;
-     color: white;
-     margin: 0;
-     padding: 0;
- }
- 
- body {
-     background-image: url('https://live.staticflickr.com/65535/53713811686_e3b2f7f927.jpg');
-     background-repeat: no-repeat;
-     background-position: center 11rem;
-     background-size: 20%;
-     background-color: black;
- }
- 
- nav {
-     display: flex;
-     justify-content: space-between;
-     padding: 0.8rem 2rem;
-     align-items: center;
- }
- 
- .nav-list ul {
-     display: flex;
- }
- 
- .nav-item {
-     margin-left: 3rem;
-     list-style: none;
- }
- 
- .nav-item a {
-     text-decoration: none;
-     font-size: 1.4rem;
-     font-weight: 700;
- }
- 
- .nav-item:hover {
-     background-color: rgb(43, 43, 43);
- }
+  font-family: Cambria, Cochin, Georgia;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
- .half-screen {
+body {
+  background-image: url("https://live.staticflickr.com/65535/53713811686_e3b2f7f927.jpg");
+  background-repeat: no-repeat;
+  background-position: center 11rem;
+  background-size: 20%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 3rem;
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.half-screen {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  width: px;
+}
+
+.funcao {
+  width: 100px;
+  font-weight: 1000;
+}
+
+.funcao:hover {
+  background-color: gray;
+}
+
+.box-esquerda,
+.box-direita {
+  flex: 1;
+  padding: 100px;
+  margin: 45px 70px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  box-shadow: 10px 15px 30px rgba(255, 0, 0, 0.5);
+  background-color: rgba(68, 68, 68, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-esquerda button {
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+.box-esquerda h1 {
+  margin-bottom: 15px;
+}
+
+.download-link {
+  text-decoration: none;
+}
+.download-link.ready-to-download {
+  text-decoration: underline;
+}
+
+@media (max-width: 570px) {
+  body {
+    background-position: center 36rem;
+  }
+
+  nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem 1rem;
+  }
+
+  .half-screen {
+    flex-direction: column;
+  }
+
+  .box-direita,
+  .box-esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .nav-item {
+    margin: 0.5rem 2.5rem;
+  }
 }
-
-.box-esquerda, .box-direita {
-    flex: 1;
-    padding: 100px;
-    margin: 45px 70px;
-    border-radius: 50px;
-    border: 1px solid #000;
-    box-shadow: 10px 15px 30px rgba(255, 0, 0, 0.5);;
-    background-color: rgba(68, 68, 68, 0.10);
-    text-align: center;
-}
-
- 
-
-
- @media (max-width:570px) {
-     nav {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 0.8rem 1rem;
-         
-     }
- 
-     .logo {
-         display: block;
-     }
- 
-     .nav-item {
-         margin: 0.5rem 2.5rem;
-     }
- 
- }
